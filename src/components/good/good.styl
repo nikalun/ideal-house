@@ -1,0 +1,301 @@
+.good
+    
+    @media (max-width 1280px)
+        display flex
+        align-items stretch
+    
+    @media (max-width 768px)
+        flex-wrap wrap
+        align-items flex-start
+    
+    &__logo
+        z-index 1
+        position absolute
+        left -237px
+        top 122px
+        width 300px
+        transform rotate(-90deg)
+        
+        @media (max-width 1400px)
+            left -194px
+            top 115px
+            width 275px
+    
+        @media (max-width 1280px)
+            left -190px
+            top 110px
+        
+        @media (max-width 1024px)
+           left 0
+           top 0
+           transform rotate(0)
+    
+        @media (max-width 768px)
+            left -76px
+            top auto
+            bottom 202px
+            width 277px
+            transform rotate(-90deg)
+    
+        @media (max-width 540px)
+            position static
+            order 2
+            margin-left auto
+            margin-right auto
+            margin-top 37px
+            transform rotate(0)
+    
+        @media (max-width 320px)
+            margin-top 21px
+            
+        img
+            width 100%
+    
+    &__data
+        position absolute
+        left -155px
+        top 300px
+        display flex
+        order 2
+        align-items center
+        padding-top 70px
+        padding-bottom 90px
+        width 743px
+        background-color #fff
+    
+        @media (max-width 1400px)
+            left 0
+            top 144px
+            width 415px
+            padding-top 36px
+            padding-bottom 47px
+            flex-wrap wrap
+            
+        @media (max-width 1280px)
+            position static
+            display flex
+            align-items flex-start
+            flex-direction column
+            justify-content flex-start
+            padding-bottom 0
+            padding-top 33px
+            padding-left 8px
+            width 385px
+    
+        @media (max-width 1024px)
+            width 421px
+            padding-left 0
+            padding-top 65px
+    
+        @media (max-width 768px)
+            width 100%
+            padding-left 30px
+            padding-right 30px
+            flex-direction row
+            flex-wrap nowrap
+    
+        @media (max-width 540px)
+            order 3
+            flex-direction column
+            padding-left 60px
+            padding-right 60px
+            padding-top 0
+    
+        @media (max-width 320px)
+            padding-left 15px
+            padding-right 15px
+            
+    &__price
+        font-weight 600
+        font-size 36px
+        line-height 57px
+        text-align left
+        letter-spacing 7px
+        color #34312d
+    
+        @media (max-width 1400px)
+            font-size 28px
+            line-height 52px
+            letter-spacing 5.5px
+        
+    &__wrapper-price
+        text-align center
+        
+    &__info
+        flex-grow 1
+    
+        @media (max-width 1280px)
+            flex-grow 0
+    
+        @media (max-width 768px)
+            flex-grow 1
+            padding-top 18px
+            padding-left 116px
+    
+        @media (max-width 540px)
+            padding-left 0
+        
+    &__pay
+        margin-top 23px
+        padding-left 50px
+        padding-right 50px
+    
+        @media (max-width 1400px)
+            margin-top 6px
+    
+        @media (max-width 1024px)
+            margin-top 0
+        
+    &__price-box
+        align-self flex-end
+        flex-shrink 0
+        width 285px
+        padding-bottom 8px
+    
+        @media (max-width 1400px)
+            margin-top 8px
+    
+        @media (max-width 1280px)
+            align-self flex-start
+            margin-top 23px
+    
+        @media (max-width 1024px)
+            margin-top 8px
+    
+        @media (max-width 768px)
+            width 200px
+            align-self center
+    
+        @media (max-width 540px)
+            width 100%
+            margin-top 23px
+        
+    &__volume
+        display block
+        margin-top -24px
+        font-weight 500
+        font-size 14px
+        line-height 57px
+        letter-spacing 2.8px
+        text-transform uppercase
+        text-align left
+        color #7e7f83
+    
+    &__image
+        order 3
+        max-width 1330px
+        width 100%
+        height calc(100vh - 120px)
+    
+        @media (max-width 1400px)
+            max-width 1107px
+            height calc(100vh - 80px)
+    
+        @media (max-width 1280px)
+            max-width 714px
+            height auto
+    
+        @media (max-width 1024px)
+           max-width 470px
+            
+        @media (max-width 768px)
+            order 1
+            max-width none
+            
+        img
+            width 100%
+            height 100%
+            object-fit cover
+        
+    &__table
+        margin-top 19px
+        table-layout fixed
+    
+        @media (max-width 1400px)
+            margin-top 3px
+            
+        &-left
+            width 177px
+    
+            @media (max-width 1400px)
+                width 270px
+    
+            @media (max-width 768px)
+                width 243px
+            
+        &-right
+            width 365px
+            
+        tbody
+            
+            tr
+                &:not(:last-of-type)
+                    td
+                        padding-bottom 11px
+    
+                        @media (max-width 1400px)
+                            padding-bottom 9px
+    
+                        @media (max-width 1024px)
+                            padding-bottom 7px
+            
+            td
+                font-size 13px
+                line-height 20px
+                letter-spacing .9px
+                text-transform uppercase
+    
+                @media (max-width 1400px)
+                    letter-spacing 0
+    
+                @media (max-width 1280px)
+                    letter-spacing -1px
+    
+                @media (max-width 1024px)
+                    font-size 11px
+                    letter-spacing .5px
+            
+                &:first-of-type
+                    font-weight 500
+                    color #7e7f83
+                    
+                &:last-of-type
+                    font-weight 600
+                    color #34312d
+    
+                    @media (max-width 540px)
+                        text-align right
+                
+    form
+    
+        @media (max-width 540px)
+            display flex
+            align-items center
+            justify-content space-between
+    
+        @media (max-width 485px)
+            flex-wrap wrap
+            justify-content center
+            
+            
+    &__title
+        font-weight 600
+        font-size 24px
+        line-height 57px
+        letter-spacing 5px
+        text-transform uppercase
+    
+        @media (max-width 1400px)
+            font-size 20px
+            letter-spacing 4px
+    
+        @media (max-width 1280px)
+            letter-spacing 2.1px
+    
+        @media (max-width 768px)
+            letter-spacing 2px
+    
+        @media (max-width 540px)
+            font-size 18px
+            text-align center
+        

@@ -1,0 +1,48 @@
+.checkbox
+    
+    &__input
+        display none
+        
+        &:checked
+
+            & + .checkbox
+                
+                &__label
+                    font-weight 600
+                    color #14110f
+                    
+                    &::before
+                        background-color #14110f
+                        box-shadow inset 0 0 0 3px #d9c5b3
+        
+    &__label
+        display flex
+        align-items center
+        font-size 14px
+        line-height 36px
+        color #a09f9f
+        cursor pointer
+        
+        &::before
+            content ''
+            flex-shrink 0
+            display block
+            margin-right 10px
+            width 18px
+            height 18px
+            background-color #a09f9f
+            
+        a
+            font-size inherit
+            
+    &_dark
+        
+        .checkbox
+            
+            &__input
+                
+                & + .checkbox
+    
+                    &__label
+                        font-weight 300
+                        color #d9c5b3

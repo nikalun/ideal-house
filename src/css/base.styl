@@ -1,0 +1,134 @@
+*
+    margin 0
+    padding 0
+    box-sizing border-box
+
+@font-face
+    font-family 'Montserrat'
+    src url('fonts/Montserrat-Light.woff2') format('woff2'),
+        url('fonts/Montserrat-Light.woff') format('woff')
+    font-weight 300
+    font-style normal
+
+@font-face
+    font-family 'Montserrat'
+    src url('fonts/Montserrat-Regular.woff2') format('woff2'),
+        url('fonts/Montserrat-Regular.woff') format('woff')
+    font-weight 400
+    font-style normal
+    
+@font-face
+    font-family 'Montserrat'
+    src url('fonts/Montserrat-Medium.woff2') format('woff2'),
+        url('fonts/Montserrat-Medium.woff') format('woff')
+    font-weight 500
+    font-style normal
+
+@font-face
+    font-family 'Montserrat'
+    src url('fonts/Montserrat-SemiBold.woff2') format('woff2'),
+        url('fonts/Montserrat-SemiBold.woff') format('woff')
+    font-weight 600
+    font-style normal
+    
+@font-face
+    font-family 'Montserrat'
+    src url('fonts//Montserrat-Bold.woff2') format('woff2'),
+            url('fonts/Montserrat-Bold.woff') format('woff')
+    font-weight 700
+    font-style normal
+    
+body
+    font-family 'Montserrat'
+    font-weight 400
+    counter-reset card
+    
+a
+    font-size 13px
+    font-weight 600
+    text-decoration none
+    outline none
+    color #515052
+    transition color 250ms ease
+    
+    &:hover
+        font-weight 600
+        color #14110f
+        
+    &:active
+        font-weight 700
+        color #14110f
+
+.dark-bg
+    
+    a
+        color #a09f9f
+    
+        &:hover
+            font-weight 600
+            color #d9c5b3
+    
+        &:active
+            font-weight bold
+            color #fff
+        
+            
+.semibold
+    font-weight 600
+    
+.medium
+    font-weight 500
+    
+.brown
+    color #d9c5b3
+    
+.bg
+    z-index 1
+    position relative
+    background-color #14110f
+    
+    &::before,
+    &::after
+        z-index -1
+        content ''
+        position absolute
+        left 0
+        display block
+        width 100%
+        background-repeat repeat-x
+        
+        @media (max-width 768px)
+            content normal
+    
+    &::after
+        bottom 0
+        height 1054px
+        background-image url('img/texture-bottom.jpg')
+        background-position bottom
+    
+    &::before
+        top 0
+        height 3020px
+        background-image url('img/texture-top.jpg')
+        background-position top
+    
+.container
+    position relative
+    padding-left 60px
+    padding-right 60px
+    
+    @media (max-width 1400px)
+        padding-left 40px
+        padding-right 40px
+    
+    @media (max-width 1280px)
+        padding-left 35px
+        padding-right 35px
+    
+    @media (max-width 1024px)
+        padding-left 30px
+        padding-right 30px
+    
+    @media (max-width 768px)
+        padding-left 15px
+        padding-right 15px

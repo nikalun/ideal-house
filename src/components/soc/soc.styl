@@ -1,0 +1,50 @@
+.soc
+    display flex
+    align-items center
+    
+    &__ico
+        fill rgb(160, 159, 159)
+    
+        &-instagram
+            width 27px
+            height 27px
+            
+        &-vk
+            width 21px
+            height 14px
+            
+        &-facebook
+            width 12px
+            height 20px
+            
+    &__item
+    
+        &:not(:last-of-type)
+            margin-right 55px
+            
+        @media (max-width 1280px)
+            margin-right 50px
+    
+        @media (max-width 768px)
+            margin-right 65px
+            
+    &__text
+        margin-left 15px
+        font-size 12px
+        font-weight 600
+        line-height 19px
+        text-transform uppercase
+        color #a09f9f
+        
+        @media (max-width 1280px)
+            display none
+    
+        @media (max-width 1024px)
+            display block
+    
+        @media (max-width 540px)
+            display none
+        
+    &__link
+        display flex
+        align-items center

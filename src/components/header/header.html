@@ -1,0 +1,32 @@
+<header class="header">
+    <div class="container header__container">
+        <div class="header__menu">
+            <div class="header__menu-wrapper ">
+                <a class="header__link header__link_top header__link_active" href="Javascript:void(0)">Вверх</a>
+                <a class="header__link" href="#advantages">Описание</a>
+                <a class="header__link" href="#soon">Шоу-рум</a>
+                <a class="header__link" href="#goods">Цены</a>
+                <a class="header__link" href="#contacts">Контакты</a>
+            </div>
+            <div class="header__menu-mini">
+                <svg  class="header__burger"  xmlns="http://www.w3.org/2000/svg"
+                        viewbox="0 0 26 26"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path fill-rule="evenodd"
+                          d="M22.000,26.000 L22.000,22.000 L26.000,22.000 L26.000,26.000 L22.000,26.000 ZM22.000,11.000 L26.000,11.000 L26.000,15.000 L22.000,15.000 L22.000,11.000 ZM22.000,-0.000 L26.000,-0.000 L26.000,4.000 L22.000,4.000 L22.000,-0.000 ZM11.000,22.000 L15.000,22.000 L15.000,26.000 L11.000,26.000 L11.000,22.000 ZM11.000,11.000 L15.000,11.000 L15.000,15.000 L11.000,15.000 L11.000,11.000 ZM11.000,-0.000 L15.000,-0.000 L15.000,4.000 L11.000,4.000 L11.000,-0.000 ZM-0.000,22.000 L4.000,22.000 L4.000,26.000 L-0.000,26.000 L-0.000,22.000 ZM-0.000,11.000 L4.000,11.000 L4.000,15.000 L-0.000,15.000 L-0.000,11.000 ZM-0.000,-0.000 L4.000,-0.000 L4.000,4.000 L-0.000,4.000 L-0.000,-0.000 Z"/>
+                </svg>
+                <svg class="header__close"   xmlns="http://www.w3.org/2000/svg"
+                        viewbox="0 0 28 28"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path fill-rule="evenodd"
+                          d="M28.288,26.374 L26.874,27.789 L14.261,15.175 L1.429,28.007 L-0.008,26.571 L12.824,13.739 L0.711,1.626 L2.126,0.211 L14.239,12.325 L26.571,-0.007 L28.007,1.429 L15.675,13.761 L28.288,26.374 Z"/>
+                </svg>
+            </div>
+        </div>
+        @@include('../logo/logo.html', { "class": "header__logo", "classHouse": "header__logo-house", "classBox": "header__logo-box", "classText": "header__logo-text", "classRoom": "header__logo-room"})
+        <div class="header__data">
+            <p class="header__address"> <span>тамбов,</span> Студенецкая 20 </p>
+            <a href="tel:+7(4752) 00-00-00" class="header__phone"> +7(4752) <span>00-00-00</span></a>
+        </div>
+    </div>
+</header>

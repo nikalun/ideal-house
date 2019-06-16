@@ -1,0 +1,116 @@
+.footer
+    position relative
+    padding-top 37px
+    padding-bottom 48px
+    background-image url(img/bg-footer.jpg)
+    background-size cover
+    background-color #14110f
+    background-position center
+    
+    &::before
+        z-index 0
+        content ''
+        position absolute
+        left 0
+        top 0
+        display block
+        width 100%
+        height 100%
+        opacity .4
+        background-color #13100f
+    
+    @media (max-width 540px)
+        background-image none
+        
+    &__container
+        z-index 1
+        position relative
+        display flex
+        justify-content space-between
+        align-items center
+    
+        @media (max-width 1024px)
+            flex-wrap wrap
+        
+    &__logo
+        order 1
+        display flex
+        align-items center
+    
+        @media (max-width 1024px)
+            order 2
+            
+        @media (max-width 540px)
+            position relative
+            width 100%
+            justify-content center
+            padding-bottom 45px
+    
+            &::after
+                content ''
+                position absolute
+                left 0
+                bottom 0
+                display block
+                width 100%
+                height 4px
+                background-color #515052
+        
+    &__logo-box
+        display flex
+        flex-direction column
+        margin-left 8px
+        margin-top 14px
+    
+    &__soc
+        order 2
+        
+        @media (max-width 1024px)
+            position relative
+            justify-content center
+            order 1
+            width 100%
+            padding-bottom 35px
+            margin-bottom 42px
+            
+            &::after
+                content ''
+                position absolute
+                left 0
+                bottom 0
+                display block
+                width 100%
+                height 4px
+                background-color #515052
+        
+    &__logo-house
+        width 68px
+        fill #d9c5b3
+    
+        @media (max-width 1024px)
+            width 65px
+        
+    &__logo-text
+        width 200px
+        fill #fff
+        
+    &__logo-room
+        width 87px
+        margin-top 6px
+        fill #fff
+        
+    &__developer
+        order 3
+        width 270px
+        font-size 13px
+        letter-spacing .8px
+        color #7e7f83
+    
+        @media (max-width 540px)
+            margin-top 35px
+            width 100%
+            text-align center
+        
+    &__copyright
+        display block
+        margin-bottom 8px

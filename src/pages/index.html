@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Техноцентр</title>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+    @@include('../components/header/header.html')
+    @@include('../components/company/company.html')
+    @@include('../components/advantages/advantages.html')
+    @@include('../components/soon/soon.html')
+    <section class="bg">
+        @@include('../components/dealer/dealer.html')
+        @@include('../components/goods/goods.html')
+        @@include('../components/contacts/contacts.html')
+    </section>
+    @@include('../components/map/map.html')
+    @@include('../components/footer/footer.html')
+    @@include('../components/popup/popup.html')
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/4.0.8/inputmask/inputmask.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAb7cHdfgIl5zo8qdHeh8LmVaR2oICw93Q" type="text/javascript"></script>
+    <script src="app.js"></script>
+</body>
+</html>

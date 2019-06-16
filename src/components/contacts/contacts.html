@@ -1,0 +1,44 @@
+<div class="contacts hash-block dark-bg" id="contacts">
+    <div class="contacts__data">
+        <p class="contacts__title">Контакты</p>
+        <table class="contacts__table">
+            <colgroup>
+                <col class="contacts__col-left">
+                <col class="contacts__col-right">
+            </colgroup>
+            <tbody>
+                <tr>
+                    <td>Адрес:</td>
+                    <td>г. Тамбов, ул Студенецкая 20</td>
+                </tr>
+                <tr>
+                    <td>Телефоны:</td>
+                    <td>+7 (4752) 00-00-00, +7 (4752) 00-00-00</td>
+                </tr>
+                <tr>
+                    <td>E-mail:</td>
+                    <td>info@test.ru</td>
+                </tr>
+                <tr>
+                    <td>Режим работы:</td>
+                    <td>пн-пт: 9.00-19.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="contacts__form-box">
+        <p class="contacts__title">Заказать консультацию</p>
+        <div class="contacts__form">
+            <div class="contacts__wrapper">
+                @@include('../input/input.html', { "value": "", "label": "Ваше имя*", "class": "input-box__input_error"})
+                @@include('../input/input.html', { "value": "", "class": "inputmask input-box__input_focus", "label": "Ваш телефон*"})
+                @@include('../input/input.html', { "value": "", "label": "Ваш e-mail*", "class": ""})
+            </div>
+            <div class="contacts__button">
+                @@include('../checkbox/checkbox.html', { "id": "contactsId", "class": "checkbox_dark", "label": "<div>Я согласен на обработку моих &nbsp<a href='javascript:void(0)' target='_blank'>персональных данных</a></div>"})
+                <button class="button button_light" type="submit">Заказать консультацию</button>
+            </div>
+        </div>
+
+    </div>
+</div>

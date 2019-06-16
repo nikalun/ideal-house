@@ -1,0 +1,42 @@
+.card
+    
+    &__title
+        font-size 16px
+        line-height 24px
+        font-weight 700
+        text-transform uppercase
+        letter-spacing 2.35px
+    
+        @media (max-width 1400px)
+            font-size 16px
+            line-height 24px
+            letter-spacing 2.5px
+        
+        &::before
+            content '0' counter(card)
+            counter-increment card
+            margin-right 6px
+            color #ccb199
+            
+            @media (max-width 1400px)
+                margin-right 11px
+                font-size 32px
+                line-height 24px
+    
+            @media (max-width 1024px)
+                font-size 16px
+    
+            @media (max-width 768px)
+                margin-right 10px
+                font-size 32px
+                line-height 24px
+    
+            @media (max-width 540px)
+                font-size 16px
+                line-height 24px
+            
+    &__text
+        margin-top 11px
+        font-size 15px
+        line-height 26px
+        letter-spacing 0

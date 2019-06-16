@@ -1,0 +1,20 @@
+<div class="popup popup_close dark-bg">
+    <svg class="popup__close"   xmlns="http://www.w3.org/2000/svg"
+         viewbox="0 0 28 28"
+         xmlns:xlink="http://www.w3.org/1999/xlink">
+        <path fill-rule="evenodd"
+              d="M28.288,26.374 L26.874,27.789 L14.261,15.175 L1.429,28.007 L-0.008,26.571 L12.824,13.739 L0.711,1.626 L2.126,0.211 L14.239,12.325 L26.571,-0.007 L28.007,1.429 L15.675,13.761 L28.288,26.374 Z"/>
+    </svg>
+    <div class="popup__form">
+        <p class="popup__title">Заказать консультацию</p>
+        <div class="popup__wrapper">
+            @@include('../input/input.html', { "value": "", "label": "Ваше имя*", "placeholder": "Не заполненное поле"})
+            @@include('../input/input.html', { "value": "", "class": "inputmask input-box__input_focus", "label": "Ваш телефон*", "placeholder": ""})
+            @@include('../input/input.html', { "value": "", "label": "Ваш e-mail*", "placeholder": "Не заполненное поле"})
+        </div>
+        <div class="popup__button">
+            @@include('../checkbox/checkbox.html', { "id": "popupId", "class": "checkbox_dark", "label": "<div>Я согласен на обработку моих &nbsp<a href='javascript:void(0)' target='_blank'>персональных данных</a></div>"})
+            <button class="button button_light" type="submit">Заказать консультацию</button>
+        </div>
+    </div>
+</div>

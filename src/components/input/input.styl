@@ -1,0 +1,88 @@
+.input-box
+    position relative
+    
+    &__label
+        position absolute
+        left 0
+        top 0
+        font-size 14px
+        font-weight 500
+        line-height 20px
+        text-transform uppercase
+        letter-spacing .5px
+        color #a09f9f
+        pointer-events none
+        transition all 250ms ease
+        
+    &__input
+        width 100%
+        height 35px
+        padding-bottom 14px
+        font-size 18px
+        font-weight 500
+        line-height 20px
+        text-transform uppercase
+        color #f3f3f4
+        outline none
+        border none
+        border-bottom 1px solid #515052
+        background-color transparent
+        transition border 250ms ease
+        
+        &_value
+            & + .input-box
+        
+                &__label
+                    top -30px
+                    font-size 9px
+        
+        &_focus,
+        &:focus
+            border-color #d9c5b3
+    
+            & + .input-box
+        
+                &__label
+                    top -30px
+                    font-size 9px
+                    
+        &_light
+            color #7e7f83
+            border-color #d9c5b3
+    
+            &.input-box__input_value
+                color #515052
+                
+                & + input-box
+                    
+                    &__label
+                        color #7e7f83
+            
+            &:focus
+                color #14110f
+                border-color #14110f
+            
+                & + .input-box
+                
+                    &__label
+                        color #14110f
+                        
+        &_error
+            color #dd114f
+            border-color #dd114f
+            
+            & + .input-box
+                
+                &__label
+                    color #dd114f
+                    
+            &:focus
+                color #dd114f
+                border-color #dd114f
+                
+                & + .input-box
+    
+                    &__label
+                        color #dd114f
+                
+        

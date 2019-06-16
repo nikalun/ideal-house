@@ -1,0 +1,592 @@
+.header
+    z-index 4
+    position relative
+    background-color #000
+    
+    &::before
+        z-index 0
+        content ''
+        position absolute
+        left 0
+        top 0
+        display block
+        width 100%
+        height 100%
+        background-image url(img/header.jpg)
+        background-position center
+        background-size cover
+        pointer-events none
+    
+    &__container
+        position relative
+        z-index 1
+        display flex
+        justify-content space-between
+        padding-top 35px
+        padding-bottom 35px
+        
+        @media (max-width 1400px)
+            padding-top 19px
+            padding-bottom 29px
+    
+        @media (max-width 1280px)
+            padding-top 11px
+            padding-bottom 20px
+    
+        @media (max-width 1024px)
+            padding-top 6px
+            padding-bottom 12px
+    
+        @media (max-width 768px)
+            padding-top 3px
+            padding-bottom 7px
+    
+        @media (max-width 540px)
+            padding-top 0
+            padding-bottom 0
+        
+    &__link
+        font-weight 500
+        font-size 13px
+        line-height 32px
+        text-transform uppercase
+        letter-spacing 2px
+        color #a09f9f
+        
+        &:hover
+            font-weight 600
+            color #d9c5b3
+            
+        &:active
+            font-weight 700
+            color #fff
+        
+        &:first-of-type
+            display none
+            
+        @media (max-width 1400px)
+            font-size 12px
+        
+    &__logo
+        order 2
+        display flex
+        flex-direction column
+        align-items center
+        width 271px
+        
+        @media (max-width 1280px)
+            order 1
+            flex-direction row
+            width 279px
+    
+        @media (max-width 540px)
+            width 37px
+        
+    &__logo-house
+        width 79px
+        height 60px
+        fill rgb(217, 197, 179)
+    
+        @media (max-width 1400px)
+            width 61px
+    
+        @media (max-width 1280px)
+            width 65px
+    
+        @media (max-width 1024px)
+            width 50px
+    
+        @media (max-width 768px)
+            width 37px
+    
+    &__logo-text
+        width 243px
+        height 21px
+        fill rgb(243, 243, 244)
+    
+        @media (max-width 1400px)
+            width 193px
+    
+        @media (max-width 1280px)
+            width 202px
+    
+        @media (max-width 1024px)
+            width 158px
+        
+    &__logo-room
+        margin-top 15px
+        width 83px
+        height 7px
+        fill rgb(243, 243, 244)
+    
+        @media (max-width 1400px)
+            margin-top 5px
+            width 67px
+    
+        @media (max-width 1280px)
+            width 86px
+    
+        @media (max-width 1024px)
+            width 68px
+    
+        @media (max-width 768px)
+            margin-top 0
+            
+    &__burger,
+    &__close
+        fill rgb(217, 197, 179)
+        
+    &__menu
+        order 1
+        display flex
+        align-items center
+        justify-content space-between
+        width 573px
+        flex-shrink 1
+    
+        @media (max-width 1400px)
+            width 425px
+    
+        @media (max-width 1280px)
+            order 2
+            width 433px
+    
+        @media (max-width 1024px)
+            order 3
+            width unset
+            padding-top 9px
+    
+        @media (max-width 768px)
+            padding-top 3px
+            
+    &__close
+        width 28px
+        height 28px
+        display none
+        
+    &__menu-wrapper
+        width 100%
+        display flex
+        align-items stretch
+        justify-content space-between
+    
+        @media (max-width 1024px)
+            display none
+        
+        &_open
+            
+            &::before
+                z-index -1
+                content ''
+                position absolute
+                left 0
+                top 0
+                display block
+                width 4px
+                height 100%
+                background-color #d9c5b3
+                
+            @media (max-width 1024px)
+                z-index 10
+                position absolute
+                top 100%
+                right 0
+                display flex
+                flex-direction column
+                justify-content flex-start
+                align-items flex-start
+                width auto
+                min-width 162px
+                height calc(100vh - 60px)
+                background-color rgba(0, 0, 0, .8)
+                
+                .header
+                
+                    &__link
+                        width 100%
+                        font-size 11px
+                        font-weight 700
+                        padding-left 36px
+                        padding-top 8px
+                        padding-bottom 8px
+                        letter-spacing 1.7px
+                        
+                        &:first-of-type
+                            display block
+                
+                        @media (max-width 540px)
+                            font-size 12px
+            
+    &__menu-mini
+        width 26px
+        height 26px
+        cursor pointer
+        
+        @media (min-width 1024px)
+            display none
+        
+        &_open
+            
+            .header
+            
+                &__burger
+                    display none
+            
+                &__close
+                    display block
+            
+    &__data
+        order 3
+        display flex
+        align-items center
+        justify-content space-between
+        width 573px
+        flex-shrink 1
+    
+        @media (max-width 1400px)
+            width 415px
+    
+        @media (max-width 1280px)
+            width unset
+            order 2
+    
+        @media (max-width 1024px)
+            width 376px
+            padding-top 9px
+    
+        @media (max-width 768px)
+            justify-content flex-end
+            padding-right 30px
+            padding-top 0
+    
+        @media (max-width 540px)
+            padding-right 22px
+    
+        @media (max-width 320px)
+            justify-content center
+            padding-right 0
+            
+    &__logo-box
+        display flex
+        flex-direction column
+        align-items center
+        justify-content center
+        margin-top 21px
+    
+        @media (max-width 1400px)
+            margin-top 6px
+    
+        @media (max-width 1280px)
+            align-items flex-start
+            margin-top 14px
+            margin-left 9px
+    
+        @media (max-width 1024px)
+            margin-top 10px
+    
+        @media (max-width 768px)
+            display none
+        
+    &__address
+        font-weight 500
+        font-size 14px
+        line-height 32px
+        text-transform uppercase
+        letter-spacing 2.8px
+        color #d9c5b3
+    
+        @media (max-width 1400px)
+            font-size 12px
+    
+        @media (max-width 1280px)
+            display none
+    
+        @media (max-width 1024px)
+            display block
+            font-size 14px
+            
+            span
+                display none
+            
+        @media (max-width 768px)
+            display none
+        
+            
+    &__phone
+        font-size 18px
+        line-height normal
+        letter-spacing 1px
+        color #d9c5b3
+    
+        &:hover
+            color #fff
+        
+        @media (max-width 1400px)
+            font-size 16px
+    
+        @media (max-width 1024px)
+            font-size 16px
+            
+        span
+            color #fff
+    
+    &_scroll
+        z-index 2
+        position fixed
+        left 0
+        top 0
+        width 100%
+        justify-content flex-start
+        background-color #14110f
+        box-shadow inset 0 0 0 1px #34312d
+        
+        &::before
+            content normal
+            
+        &::after
+            content ''
+            position absolute
+            left 0
+            top 0
+            display block
+            width 350px
+            height 100%
+            background-color #fff
+    
+            @media (max-width 1400px)
+                width 270px
+    
+            @media (max-width 1280px)
+                width 305px
+    
+            @media (max-width 1024px)
+                content normal
+                
+                
+        @media (max-width 1024px)
+            background-color #fff
+            box-shadow none
+            border-bottom 12px solid #d9c5b3
+    
+            @media (max-width 768px)
+                border-bottom-width 10px
+    
+            @media (max-width 540px)
+                border-bottom-width 6px
+            
+        .header
+            
+            &__data
+                padding-top 4px
+                padding-bottom 13px
+                width 573px
+                
+                @media (max-width 1400px)
+                    width 450px
+                    padding-top 0
+                    padding-bottom 0
+    
+                @media (max-width 1280px)
+                    width auto
+    
+                @media (max-width 768px)
+                    width 62%
+            
+            &__container
+                padding-top 0
+                padding-bottom 0
+                align-items stretch
+    
+                @media (max-width 1400px)
+                    padding-left 35px
+                    padding-right 35px
+                    
+                @media (max-width 540px)
+                    padding-left 15px
+                    padding-right 15px
+            
+            &__link
+                display flex
+                align-items center
+                padding 23px ( (30 / 1920 ) * 100% )
+                font-weight 600
+                color #a09f9f
+                
+                &:hover
+                    font-weight 600
+                    color #d9c5b3
+                
+                &:active
+                    font-weight bold
+                    color #fff
+                
+                &:first-of-type
+                    display flex
+                    
+                @media (max-width 1400px)
+                    padding 16px ( (17 / 1400) * 100%)
+    
+                @media (max-width 1280px)
+                    z-index 0
+                    position relative
+                    padding-top 8px
+                    padding-bottom 8px
+                    padding-left (36 / 1280) * 100%
+                    padding-right (17 / 1280) * 100%
+                    
+                @media (max-width 1024px)
+                    padding-left 36px
+                    padding-right 17px
+                    
+                &_active
+                    color #14110f
+                    background-color #fff
+                    
+                    &:hover
+                        font-weight 600
+                        color #14110f
+                    
+                    &:active
+                        font-weight 700
+                        color #14110f
+                    
+                    @media (max-width 1024px)
+                        background-color #bbbbbb
+    
+                        &::before
+                            z-index -1
+                            content ''
+                            position absolute
+                            left 0
+                            top 0
+                            display block
+                            width 4px
+                            height 100%
+                            background-color #d9c5b3
+                        
+                &_bold
+                    font-weight 700
+            
+            &__logo
+                order 1
+                flex-direction row
+                width: 290px
+                padding-top 4px
+                padding-bottom 13px
+    
+                @media (max-width 1400px)
+                    padding-top 0
+                    padding-bottom 0
+                    width 208px
+    
+                @media (max-width 1280px)
+                    width 260px
+                    
+                @media (max-width 1024px)
+                    margin-right 0
+    
+                @media (max-width 768px)
+                    width auto
+                    
+            &__logo-house
+                width 55px
+                flex-shrink 0
+                fill #000
+    
+                @media (max-width 1400px)
+                    width 45px
+            
+            &__logo-text
+                width 168px
+                fill #3d3a36
+    
+                @media (max-width 1400px)
+                    width 142px
+
+            &__logo-box
+                margin-top 11px
+                padding-left 6px
+                justify-content flex-start
+                align-items flex-start
+    
+                @media (max-width 1400px)
+                    padding-left 9px
+    
+                @media (max-width 768px)
+                    margin-left 0
+            
+            &__logo-room
+                margin-top 2px
+                width 73px
+                fill #7f7e7f
+    
+                @media (max-width 1400px)
+                    width 60px
+            
+            &__address
+                font-size 14px
+    
+                @media (max-width 1400px)
+                    font-size 12px
+                
+                @media (max-width 1280px)
+                    display none
+    
+                @media (max-width 1024px)
+                    display block
+                    margin-right 44px
+                    font-size 15px
+                    line-height 32px
+                    color #14110f
+    
+                @media (max-width 768px)
+                    display none
+                    
+            &__phone
+               
+                @media (max-width 1024px)
+                    font-weight 600
+                    line-height 32px
+                    color #7e7f83
+                    
+                    span
+                        color #14110f
+                
+            &__burger,
+            &__close
+    
+                @media (max-width 1024px)
+                    fill #34312d
+                
+            &__menu-wrapper
+                height 100%
+                justify-content flex-start
+                align-items stretch
+            
+                &_open
+                    top calc(100% + 12px)
+    
+                    @media (max-width 1024px)
+                        height 100vh
+                    
+                    @media (max-width 768px)
+                        top calc(100% + 10px)
+    
+                    @media (max-width 540px)
+                        top calc(100% + 6px)
+                    
+                    
+            &__menu
+                order 2
+                flex-grow 1
+                flex-shrink 0
+    
+                @media (max-width 1400px)
+                    padding-top 0
+                    padding-bottom 0
+                    margin-right 0
+    
+                @media (max-width 1024px)
+                    flex-grow 0
+                    order 3
+                    width auto
